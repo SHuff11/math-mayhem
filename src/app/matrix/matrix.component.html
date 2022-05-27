@@ -1,0 +1,10 @@
+<p>Transmutation Circle</p>
+<div style="display:table; width:100%" >
+    <div *ngFor="let x of matrix"
+        style="display:table-row">
+        <app-matrix-card 
+            *ngFor="let l of x" 
+            [value]="l">
+        </app-matrix-card>
+    </div>
+</div>
